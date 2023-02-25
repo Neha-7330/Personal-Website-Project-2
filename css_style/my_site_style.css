@@ -1,0 +1,312 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+
+.background_image{
+    height: 750px;
+    width: 100%;
+    display:block;
+    position: relative;
+}
+
+
+h2{
+    position: absolute;
+    font-size:xx-large;
+    color: #65f6f6;
+    font-family: 'Merriweather', serif;
+
+}
+
+p{
+    position: absolute;
+    font-size: x-large;
+    width: 35%;
+    font-family: 'Roboto Slab', serif;
+}
+
+hr{
+    position: absolute;
+    border: none;
+    border-top: dotted;
+    border-color: #a6a3f0;
+    border-width: thick;
+}
+
+h1{
+    position: absolute;
+    font-size: 40px ;
+    color: #dbfafa;
+    top: 300px;
+    left: 43%;
+    font-family: 'Merriweather', serif;
+
+}
+
+video{
+    position: absolute;
+    display: inline-block;
+    top: 400px;
+    left: 400px;
+}
+
+#heading1{
+    top: 50px;
+    left: 50%; 
+}
+
+#para1{
+    top: 120px;
+    left: 35%;
+}
+
+#hr1{
+    top: 270px;
+    left : 49%;
+    width: 5%; 
+}
+
+#heading2{
+    display: inline-block;
+    top: 420px;
+    left: 700px;
+}
+
+#para2{
+    text-align: left;
+    top: 490px;
+    left: 700px;
+}
+
+#heading3{
+    text-align: left;
+    top: 650px;
+    left: 400px;
+}
+
+#para3{
+    text-align: left;
+    top: 1470px;
+    left: 400px;
+}
+
+#img2{
+    position: absolute;
+    display: inline-block;
+    height: 220px;
+    width: 220px;
+    top: 1400px;
+    left: 990px;
+}
+
+#hr2{
+    top: 1700px;
+    left : 49%;
+    width: 5%;  
+}
+
+#heading4{
+    top: 1750px;
+    left: 45%; 
+}
+
+#heading5{
+    text-align: left;
+    top: 1850px;
+    left: 400px; 
+}
+
+#para4{
+    text-align: left;
+    top: 1930px;
+    left: 400px;
+}
+
+#img3{
+    position: absolute;
+    display: inline-block;
+    height: 220px;
+    width: 220px;
+    top: 1930px;
+    left: 990px;
+}
+
+a.button{
+   appearance: button;
+   position:absolute;
+   height: 38px;
+   width: 200px;
+   padding-top: 7px;
+   transition-duration: 0.4s;
+   font-size: 20px;
+   font-family: 'Roboto Slab', serif;
+   background-color: rgb(16, 112, 209);
+   color: white;
+   border: 5px solid #1c0279; 
+
+}
+
+.button:hover {
+    background-color: #b3b8fe; 
+    color: white;
+}
+
+#b1{
+    top: 2080px;
+    left: 530px; 
+}
+
+#b2{
+    top: 2170px;
+    left: 990px;
+}
+
+#heading6{
+    text-align: left;
+    top: 2150px;
+    left: 400px; 
+}
+
+#footer{
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(224, 12, 236),rgb(80, 8, 188), rgb(0, 217, 255));
+}
+
+.a{
+    display:inline-block;
+    position:relative;
+    padding-left: 30px;
+    padding-top: 20px;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    color: #b3b8fe;
+}
+
+.a:hover{
+    color:chartreuse;
+}
+
+#para5{
+    font-size: small;
+    margin-left: 510px;
+    margin-top: 30px;
+}
+
+/*
+CSS NOTES:-
+
+* THREE TYPES OF CSS :
+1] INLINE CSS
+2] INTERNAL CSS
+3] EXTERNAL CSS
+
+* SYNTAX OF CSS:-
+SELECTOR { PROPERTY : VALUE ; }
+
+* FOR STYLING THE PARTICULAR ELEMENT WE HAVE THREE TYPES OF SELECTOR :-
+1] TAG SELECTOR eg :- h1 { background-color : red ; }
+1] CLASS SELECTOR eg :- .class_name { background-color : red ; }
+1] ID SELECTOR eg :- #id_name { background-color : red ; }
+
+# REVIEW FAVICON AND DIV TAG
+
+# BOX MODEL OF WEBSITE STYLING :-
+ _____________________________
+|MARGINE                      |
+|   _______________________   |
+|  |BORDER                 |  |
+|  |   _________________   |  |
+|  |  |PADDING          |  |  |
+|  |  |   ___________   |  |  |
+|  |  |  |MAIN AREA  |  |  |  |
+|  |  |  |___________|  |  |  |
+|  |  |                 |  |  |
+|  |  |_________________|  |  |
+|  |                       |  |
+|  |_______________________|  |
+|                             |
+|_____________________________|
+
+1] MARGINE : It is for seperation between items on the webpage
+2] BORDER : border is the frame for that item it can be solid or of ant other type 
+3] PADDING : pagging id space between main content and border it basically increase the internal area
+4] MAIN AREA : content that is written or displayed.
+
+* DISPLAY PROPERTY OF CSS:-
+
+1] BLOCK
+2] INLINE
+3] INLINE - BLOCK
+4] NONE
+
+1) BLOCK elements of html are those who takes entire width of the screen.
+   for example :- Paragraph <p>
+                  heading tags <h1> to <h6>
+                  lists and list items (<ol>, <ul>,and <li>)
+                  forms <form>
+this are some common block elements.
+we can change the display property of block element such as
+p { display : inline ; }
+to make it appere on same line but then we cant change the width of the element.
+
+2) INLINE ELEMENTS :- taske space as per requirement, only the space that is required
+    for example :- Spans (<span>)
+                   Images (<img>)
+                   Anchors (<a>)
+this are some common inline elements.
+the problem with inline elements is that we can't change the width
+we can also change the display property of inline to block, if we do so
+we can change the width of the elements but now they will not be displayed side by side.
+
+IF I WANTED ELEMENTS THAT CAN OCCUPY THE SAME LINE BUT AT THE SAME 
+TIME I CAN SET THERI WIDTHS.
+
+SO, TO DO SO WE CAN USE INLINE-BLOCK, AND THIS KIND OF GIVES YOU THE
+BEST OF BOTH WORLDS.
+
+4) NONE :- if the display property of the element is set to none
+           it simply removes that particular element from the website.
+           none makes completely disappear the element out of the flow 
+           of the document as it it never was written inside the code.
+           it is just like we have deleted it from the html.
+           but of coursse we haven't.
+
+the OTHER ONE IS THE PROPERTY CALLED VISIBILITY           
+selector { visibility : hidden ; }
+and what this does it that it makes that element disappear but it keeps
+its original position, and all the other elements still flow around it as 
+if it's still there.
+
+* 3 RULES :-
+1) CONTENT IS EVERYTHING
+2) THE DEFAULT POSITION COMES FROM CODE
+3) CHILD SITS OVER PARENT
+
+* POSITION IN CSS :-
+
+1) STATIC :- DEFAULT ACCORDING TO HTML CODE
+2) RELATIVE :- CHANGE IN POSITION ACCORDING TO THEIR CURRENT POSITION. 
+               ADDS MARGINE FROM THAT PARTICULAR SIDE.
+               RELETIVE POSITIONING DOES NOT AFFECT THE FLOW OF OTHER ELEMENTS.
+
+3) ABSOLUTE :- the position of element relative to your parent elemrnt.
+               ABSOLUTE POSIONING DOES AFFECT THE FLOW OF THE ELEMENT.
+         
+4) FIXED :-  THE FIXED ELEMENT DOES NOT MOVE FROM THE SCREEN DISPITE OF SCROLLING THE 
+             WEB PAGE.             
+        
+             
+**************************************************************************************
+
+FOR FONT-SIZE 16px = 100% = 1em
+
+CENTERING ELEMENTS:
+tiext-align: centre in main body tag (main tag)
+or
+margin : 0 auto 0 auto (top right butom left)
+margin : 0 auto        (top & buttom left & right)
+margin : 0 auto 0      (top left & right buttom)
+margine : 0            (all 4 sides)
+*/
+
